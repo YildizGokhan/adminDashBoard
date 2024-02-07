@@ -1,10 +1,9 @@
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { ColorModeContext, useMode } from "./theme";
 import Topbar from "./scenes/global/Topbar";
-import { Routes } from "react-router-dom";
-import { Route } from "@mui/icons-material";
+import { Routes, Route } from "react-router-dom";
 import Sidebar from "./scenes/global/Sidebar";
-// import Dashboard from "./scenes/dashboard";
+import Dashboard from "./scenes/dashboard";
 // import Team from "./scenes/team";
 // import Invoices from "./scenes/invoices";
 // import Contacts from "./scenes/contacts";
@@ -28,7 +27,7 @@ function App() {
           <main className="content">
             <Topbar />
             <Routes>
-              {/* <Route path="/" element={<Dashboard />} /> */}
+              <Route path="/" element={<Dashboard />} />
               {/* <Route path="/team" element={<Team />} /> */}
               {/* <Route path="/contact" element={<Contacts />} /> */}
               {/* <Route path="/invoices" element={<Invoices />} /> */}
