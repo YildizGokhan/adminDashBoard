@@ -44,6 +44,7 @@ const Sidebar = () => {
     return (
         <Box
             sx={{
+                
                 "& .pro-sidebar-inner": {
                     background: `${colors.primary[400]} !important`
                 },
@@ -54,13 +55,14 @@ const Sidebar = () => {
                     padding: "5px 35px 5px 20px !important"
                 },
                 "& .pro-inner-item:hover": {
-                    color: "#868dfb ! important"
+                    color: "#a68dfb ! important"
                 },
                 "& .pro-menu-item.active": {
-                    color: "#6870fa !important"
-                }
+                    color: "#a870fa !important"
+                },
+
             }}>
-            <ProSidebar collapsed={isCollapsed}>
+            <ProSidebar collapsed={isCollapsed} >
                 <Menu iconShape="square">
                     <MenuItem
                         onClick={() => setIsCollapsed(!isCollapsed)}
@@ -77,7 +79,7 @@ const Sidebar = () => {
                                 alignItems="center"
                                 ml="15px"
                             >
-                                <Typography variant="h3" color={colors.grey[100]}>
+                                <Typography variant="h3" color={colors.grey[100]} fontSize={"20px"} fontWeight="bold">
                                     ADMINS
                                 </Typography>
                                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
@@ -99,7 +101,7 @@ const Sidebar = () => {
                             </Box>
                             <Box textAlign="center">
                                 <Typography
-                                    variant="h2"
+                                    variant="h3"
                                     color={colors.grey[100]}
                                     fontWeight="bold"
                                     sx={{ m: "10px 0 0 0" }}

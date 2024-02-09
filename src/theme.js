@@ -3,6 +3,7 @@ import { createTheme } from "@mui/material/styles";
 
 // color design tokens export
 export const tokens = (mode) => ({
+    //3 doc for ternary system. gy
     ...(mode === "dark"
         ? {
             grey: {
@@ -137,7 +138,7 @@ export const themeSettings = (mode) => {
                     },
                     neutral: {
                         dark: colors.grey[700],
-                        main: colors.grey[500],
+                        main: colors.grey[400],
                         light: colors.grey[100],
                     },
                     background: {
@@ -154,7 +155,7 @@ export const themeSettings = (mode) => {
                     },
                     neutral: {
                         dark: colors.grey[700],
-                        main: colors.grey[500],
+                        main: colors.grey[400],
                         light: colors.grey[100],
                     },
                     background: {
